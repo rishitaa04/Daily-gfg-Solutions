@@ -1,0 +1,17 @@
+
+class Solution {
+    
+    public long leftElement(long arr[], long n)
+    {
+        // Your code goes here  
+        long result = 0;
+        Arrays.sort(arr);
+        if(n%2 != 0){
+            result = arr[(arr.length/2)];
+        }
+        else{
+            result = arr[(arr.length/2) - 1];
+        }
+        return result;
+    }
+}
